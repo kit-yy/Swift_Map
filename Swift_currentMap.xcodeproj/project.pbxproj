@@ -12,6 +12,8 @@
 		CE26E5B21E5C131D006AE04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE26E5B01E5C131D006AE04A /* Main.storyboard */; };
 		CE26E5B41E5C131D006AE04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE26E5B31E5C131D006AE04A /* Assets.xcassets */; };
 		CE26E5B71E5C131D006AE04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE26E5B51E5C131D006AE04A /* LaunchScreen.storyboard */; };
+		CE26E5C01E5C1727006AE04A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE26E5BF1E5C1727006AE04A /* MapKit.framework */; };
+		CE26E5C21E5C172F006AE04A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE26E5C11E5C172F006AE04A /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CE26E5B31E5C131D006AE04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE26E5B61E5C131D006AE04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE26E5B81E5C131D006AE04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE26E5BF1E5C1727006AE04A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE26E5C11E5C172F006AE04A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE26E5C21E5C172F006AE04A /* CoreLocation.framework in Frameworks */,
+				CE26E5C01E5C1727006AE04A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				CE26E5AB1E5C131D006AE04A /* Swift_currentMap */,
 				CE26E5AA1E5C131D006AE04A /* Products */,
+				CE26E5BE1E5C1726006AE04A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,15 @@
 				CE26E5B81E5C131D006AE04A /* Info.plist */,
 			);
 			path = Swift_currentMap;
+			sourceTree = "<group>";
+		};
+		CE26E5BE1E5C1726006AE04A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE26E5C11E5C172F006AE04A /* CoreLocation.framework */,
+				CE26E5BF1E5C1727006AE04A /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +112,7 @@
 				TargetAttributes = {
 					CE26E5A81E5C131D006AE04A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4G7E7A5Y4A;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -258,7 +275,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4G7E7A5Y4A;
 				INFOPLIST_FILE = Swift_currentMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuaki.Swift-currentMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,7 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4G7E7A5Y4A;
 				INFOPLIST_FILE = Swift_currentMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuaki.Swift-currentMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
